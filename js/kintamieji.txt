@@ -1,0 +1,5 @@
+kintamieji
+palyginimas 4 > 2
+ciklai (pasikartuojantys reiskiniai)
+funkcijos (tos pacios logikos perpanaudojimas) + Class 
+Event listeners (kai paspaudi elementa, kazkas atsitinka)
