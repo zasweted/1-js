@@ -32,4 +32,13 @@ console.log(['a'].length);
 console.log(['a', 'b'].length);
 console.log(['a', 'b', 'labas'].length);
 
-console.log();
+console.log('');
+console.log('labas');
+console.log(''.length);
+console.log('labas'.length);
+
+const word = 'Karsta vasara!';
+for (let i = 0; i < word.length; i++) {
+    const letter = word[i];
+    console.log(i, ')', letter);
+}

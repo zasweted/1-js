@@ -9,7 +9,7 @@ if () {} else () {}... else if () {}
 if () {} else () {}... else if () {} else {}
 
 Paliginimo operatoriai:
-visi: >, <, >=, <=, ==, !=, ===, !==
+visi: >, <, >=, <=, ==, (!= - not equal), ===, !==
 naudotini:>, <, >=, <=, ===, !==
 nenaudotini: ==, !=
 
