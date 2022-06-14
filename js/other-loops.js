@@ -89,3 +89,25 @@ const divReduce = marks.reduce((total, mark) => total / mark);
 const divReduce20 = marks.reduce((total, mark) => total / mark, 20);
 console.log(divReduce);
 console.log(divReduce20);
+
+//sort 
+console.log('-----------------sort');
+const numList = [10, 2, 8, 4, 6, 1, 7, 23, 17];
+const minMaxList = [...numList].sort((a, b) => a - b); //.sort((a, b) => a - b);
+const maxMinList = [...numList].sort((a, b) => b - a);
+
+console.log(numList);
+console.log(minMaxList, 'minMaxList');
+console.log(maxMinList, 'maxMinList');
+
+const stingList = ['b', 'd', 'c', 'de', 'be', 'a', 'at'];
+const minMaxStrings = [...stingList].sort((a, b) => a > b ? -1 : 1);
+const maxMinStrings = [...stingList].sort((a, b) => a < b ? -1 : 1);
+
+console.log(stingList);
+console.log(minMaxStrings);
+console.log(minMaxStrings);
+console.log(maxMinStrings);
+
+
+//map > filter > sort > reduce
