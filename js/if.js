@@ -48,7 +48,7 @@ loginiai operatoriai :
 // }
 
 const diena = 2;
-if (diena ===1) {
+if (diena === 1) {
     console.log('pirmadienis');
 } else {
     if (diena === 2) {
