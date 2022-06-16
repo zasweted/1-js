@@ -25,6 +25,7 @@
     "math-as-object": "nodemon ./js/math-as-object.js",
     "lettercount": "nodemon ./js/lettercount.js",
     "if-values": "nodemon ./js/if-values.js",
+    "text-count": "nodemon ./js/text-count.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

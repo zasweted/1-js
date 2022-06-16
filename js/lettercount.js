@@ -33,9 +33,4 @@ function charCount(str) {
 
 console.log(charCount(text));
 
-const dic = wordCount(bigText);
-
 //for-in
-for (const key in dic) {
-    console.log(key, '->', dic[key]);
-}
