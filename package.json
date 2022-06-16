@@ -8,6 +8,7 @@
     "number": "nodemon ./js/number.js",
     "number-parsing": "nodemon ./js/number-parsing.js",
     "empty": "nodemon ./js/empty.js",
+    "parsing": "nodemon ./js/parsing.js",
     "string": "nodemon ./js/string.js",
     "function": "nodemon ./js/function.js",
     "if": "nodemon ./js/if.js",
