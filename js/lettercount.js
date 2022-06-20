@@ -17,7 +17,7 @@ const text = 'Labas rytas Lietuva';
 // console.log(charCount(text));
 
 function charCount(str) {
-    const raides = {      
+    const raides = {   
     };
 
     for (const symbol of str) {

@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "nodemon",
     "number": "nodemon ./js/number.js",
+    "concat": "nodemon ./js/concat.js",
+    "set": "nodemon ./js/set.js",
     "number-parsing": "nodemon ./js/number-parsing.js",
     "empty": "nodemon ./js/empty.js",
     "parsing": "nodemon ./js/parsing.js",

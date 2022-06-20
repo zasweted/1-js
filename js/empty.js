@@ -1,8 +1,8 @@
 
-function bMI(weight, height){
-    let a = 80;
-    let b = 1.80;
-    const mass = (a, b) => (a / b ** 2);
-    console.log('asdf')
-    
-}
+
+const number = [5, 8, 12, 19, 22];
+
+let sum = numbers.sort(function(a, b)return a - b);
+
+const minMaxList = [...numbers].sort((a, b) => a - b);
+
