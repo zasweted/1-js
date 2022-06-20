@@ -46,12 +46,28 @@ console.log(d1);
 const d2 = Object.keys(d1);
 console.log(d2);
 
-//4)
-console.log('-----------------');
+// 4)
 const rinkinys = new Set();
 for (const n of a) {
-    rinkinys.add(n)
+    rinkinys.add(n);
 }
-
 console.log(rinkinys);
 console.log(rinkinys.size);
+console.log(rinkinys.entries());
+
+rinkinys.forEach(n => {
+    console.log(n);
+})
+
+const r = [];
+for (const n of rinkinys) {
+    r.push(n);
+}
+
+console.log(r);
+
+console.log([...rinkinys]);
+console.log('----------------------');
+
+// 4b
+console.log([...(new Set(a))]);
