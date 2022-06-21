@@ -1,6 +1,6 @@
 console.clear()
 
-const a = [1, 2, 3, 4, 'labas', 1, 4, 2, 5, 7, '1'];
+const a = [1, 2, 3, 4, 1, 4, 2, 5, 7, '1'];
 
 //1)
 const b1 = [];
