@@ -43,20 +43,28 @@ const family = [
     },
 ];
 
-function oldest(list) {
+function oldest(list, depth = 0) {
     let age = -1;
+    let name = '';
     for (const person of list) {
         if (person.age > age) {
             age = person.age;
+            name = person.name;
         }
         if (person.children && person.children.length > 0) {
-            const oldestChild = oldest(person.children);
-            if (oldestChild > age) {
-                age = oldestChild;
+            const oldestChild = oldest(person.children, depth + 1);//rekursijos eilute
+            if (oldestChild.age > age) {
+                age = oldestChild.age;
+                name = oldestChild.name;
             }
         }
     }
-    return age;
+    return depth === 0 ? `${name} is ${age} years old.` : { name, age };
+
+    
 }
 
-console.log(oldest(family)); // Styvas is 105 years old.
+console.log(oldest(family));
+ // Styvas is 105 years old.
+
+//  family[0].children[0].children[0].name, 'is', oldest(family), 'years old'
