@@ -1,55 +1,10 @@
-const petrasFirstName = 'Petras';
-const petrasAge = 99;
-const petrasIsMarried = true;
-
-
-const maryteFirstName = 'Maryte';
-const maryteAge = 87;
-const maryteIsMarried = false;
-
-
-
-const jonasFirstName = 'Jonas';
-const jonasAge = 66;
-const jonasIsMarried = false;
-
-
-const onaFirstName = 'Ona';
-const onaAge = 17;
-const onaIsMarried = true;
-
-//------------------------------
-const names = [];
-const ages = [];
-const isMarried = [];
+console.clear();
 
 const people = [
-    ['Petras', 99, true, [10, 2, 8, 4, 6]],
-    ['Maryte', 87, false, [10, 2, 8, 4, 6]],
-    ['Jonas', 66, false, [10, 2, 8, 4, 6]],
-    ['Ona', 17, true, [10, 2, 8, 4, 6]],
-];
-
-const personIndex = 0;
-const person = people[personIndex];
-const personName = people[personIndex][0];
-const personAge = people[personIndex][1];
-const personStatus = people[personIndex][2];
-const personFirstMark = people[personIndex][3][0];
-
-console.log(personName);
-console.log(personAge);
-console.log(personStatus);
-console.log(personFirstMark);
-
-//----------------------------------------------------------
-
-
-const people2 = [
     {
         name: 'Petras',
         age: 99,
-        isMarried: true, 
+        isMarried: true,
         marks: [10, 2, 8, 4, 6],
     },
     {
@@ -67,61 +22,127 @@ const people2 = [
     {
         name: 'Ona',
         age: 17,
-        isMarried: true, 
+        isMarried: true,
         marks: [10, 2, 8, 4, 6],
     },
 ];
-const pn = people2[1]['name'];
-const pa = people2[1]['age'];
-const pm = people2[1]['marks'];//[3]
-const ps = people2[1]['isMarried'];
+
+const pn = people[3]['name'];
+const pa = people[3]['age'];
+const pm = people[3]['marks'][0];
+const ps = people[3]['isMarried'];
+
+const pn2 = people[3].name;
+const pa2 = people[3].age;
+const pm2 = people[3].marks[0];
+const ps2 = people[3].isMarried;
+
 console.log(pn);
 console.log(pa);
 console.log(pm);
 console.log(ps);
 
-//-----------------------------------------
+console.log(pn2);
+console.log(pa2);
+console.log(pm2);
+console.log(ps2);
 
-// gender: true/male
-// gender: false/female
 const students = [
     {
         name: 'Petras',
         dob: 2015,
         marks: [],
         gender: true,
-        responsibleHumans : [
+        responsibleHumans: [
             {
                 name: 'Jonas',
                 status: 'parent',
                 dob: 1999,
                 phone: [
-                    48484848484,
-                    56565656566,
+                    4859624856,
+                    4859624857,
                 ],
-                email: 'jonas@jonas.lt',
-                adress: {
+                email: [
+                    'jonas@jonas.jonas',
+                    'jonas2@jonas2.jonas2',
+                ],
+                address: {
                     country: 'LTU',
                     city: 'Vilnius',
                     street: 'Verkiu g.',
                     buildingNr: 1,
                     appartmentNr: 13,
                 }
-            }
+            },
+            {
+                name: 'Maryte',
+                status: 'parent',
+                dob: 1999,
+                phone: [
+                    4859624856,
+                    4859624857,
+                    4859624858,
+                    4859624859,
+                ],
+                email: [
+                    'maryte@maryte.maryte',
+                    'maryte2@maryte2.maryte2',
+                ],
+                address: {
+                    country: 'LTU',
+                    city: 'Vilnius',
+                    street: 'Verkiu g.',
+                    buildingNr: 1,
+                    appartmentNr: 13,
+                }
+            },
+            {
+                name: 'Ona',
+                status: 'parent',
+                dob: 1999,
+                phone: [
+                    4859624856,
+                ],
+                email: [
+                    'Ona@Ona.Ona',
+                    'Ona2@Ona2.Ona2',
+                ],
+                address: {
+                    country: 'LTU',
+                    city: 'Vilnius',
+                    street: 'Verkiu g.',
+                    buildingNr: 1,
+                    appartmentNr: 13,
+                }
+            },
         ]
     }
 ];
 
-const respHumans = students[0].responsibleHumans; //arba ['responsibleHumans'];
-console.log(respHumans[0].name);// arba ['name'];
+const respHumans = students[0].responsibleHumans;
 
-// for (const human of respHumans) {
-//  console.log(human.name);
-    // for (const phone of human.phone) {
-    //     console.log('-', phone);
-    // }    
-//}
+console.log('-------------------');
+let nr = 0;
+for (const human of respHumans) {
+    console.log(++nr, ')', human.name);
 
-console.log(students[0].responsibleHumans[0].adress.street);
-console.log(students[0].responsibleHumans[0].adress.buildingNr);
+    for (const phone of human.phone) {
+        console.log('-', phone);
+    }
+}
 
+console.log('-------------------');
+for (let i = 0; i < respHumans.length; i++) {
+    const human = respHumans[i];
+    console.log(i + 1, ')', human.name);
+
+    for (let j = 0; j < human.phone.length; j++) {
+        const phone = human.phone[j];
+        console.log('-', phone);
+    }
+}
+
+console.log(
+    students[0].responsibleHumans[1].address.street, 'gyvena',
+    students[0].responsibleHumans[1].address.buildingNr,
+);
