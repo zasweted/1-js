@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "nodemon",
     "number": "nodemon ./js/number.js",
+    "destructuring": "nodemon ./js/destructuring.js",
     "uzdotis": "nodemon ./js/uzdotis.js",
     "numCount": "nodemon ./js/numCount.js",
     "maxInList": "nodemon ./js/maxInList.js",
     "family": "nodemon ./js/family.js",
+    "pc-storage": "nodemon ./js/pc-storage.js",
+    "pc-storage-search": "nodemon ./js/pc-storage-search.js",
     "concat": "nodemon ./js/concat.js",
     "random": "nodemon ./js/random.js",
     "set": "nodemon ./js/set.js",
