@@ -23,6 +23,12 @@ const person = {
 const { age, children, ...otherInfo } = person;
 const [bart, liza] = children;
 
+const { age: bartAge} = bart;
+const { age: lizaAge} = liza;
+
+console.log('BART AGE:', bartAge);
+console.log('LIZA AGE:', lizaAge);
+
 console.log(age);
 console.log(children);
 console.log(otherInfo);
