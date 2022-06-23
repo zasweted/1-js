@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "number": "nodemon ./js/number.js",
+    "multyarray": "nodemon ./js/multyarray.js",
     "destructuring": "nodemon ./js/destructuring.js",
     "uzdotis": "nodemon ./js/uzdotis.js",
     "numCount": "nodemon ./js/numCount.js",
